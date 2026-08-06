@@ -17,4 +17,4 @@ RUN useradd venkat
 USER venkat
 
  EXPOSE 80     
-CMD ["nginx","-g","daemon off;"]
+CMD ["sleep","1000"]
