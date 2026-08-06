@@ -9,7 +9,7 @@ LABEL  class="x" \
 
 RUN useradd venkat
 
-USER Vvenkat
+USER venkat
 
  EXPOSE 80     
 CMD ["nginx","-g","daemon off;"]
