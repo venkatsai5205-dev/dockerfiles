@@ -6,6 +6,10 @@ ADD https://www.w3schools.com/ /usr/share/nginx/html/index.html
 RUN chmod +r /usr/share/nginx/html/index.html
 LABEL  class="x" \
        student="venkat"
+RUN mkdir -p /var/lib/nginx/tmp \
+    && chown -R nginx:nginx /var/lib/nginx \
+    && chown -R nginx:nginx /var/log/nginx
+
 
 RUN useradd venkat
 
