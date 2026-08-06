@@ -21,7 +21,7 @@ ENV class="x" \
 
 ARG LECTURER:"SAI"
 
-RUN echo "HI this class is: ${class},student is: ${student}, Class teacher name: ${LECUTERER}"
+RUN echo "HI this class is: ${class},student is: ${student}, Class teacher name: ${LECTURER}"
 
 
 
