@@ -14,16 +14,16 @@ RUN mkdir -p /var/lib/nginx/tmp \
 
 
 RUN useradd venkat
+EXPOSE 80
 
 USER venkat
 ENV class="x" \
-       student="venkat"
+    student="venkat"
 
-ARG LECTURER:"SAI"
+ARG teacher:"SAI"
 
-RUN echo "HI this class is: ${class},student is: ${student}, Class teacher name: ${LECTURER}"
+RUN echo "HI this class is: ${class},student is: ${student}, Class teacher name: ${teacher}"
 
 
 
- EXPOSE 80     
 CMD ["sleep","1000"]
