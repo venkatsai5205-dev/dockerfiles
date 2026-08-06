@@ -1,5 +1,5 @@
-ARG version
-FROM almalinux:${version: -9}
+
+FROM almalinux:9
 RUN dnf install nginx -y
 RUN dnf install git -y
 RUN rm -rf /usr/share/nginx/html/index.html
