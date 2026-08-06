@@ -7,5 +7,9 @@ RUN chmod +r /usr/share/nginx/html/index.html
 LABEL  class="x" \
        student="venkat"
 
+RUN useradd venkat
+
+USER Vvenkat
+
  EXPOSE 80     
 CMD ["nginx","-g","daemon off;"]
