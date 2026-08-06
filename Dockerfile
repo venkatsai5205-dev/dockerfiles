@@ -3,4 +3,5 @@ RUN dnf install nginx -y
 RUN rm -rf /usr/share/nginx/html/index.html
 COPY index.html /usr/share/nginx/html/index.html
 ADD https://www.w3schools.com/ /usr/share/nginx/html/index.html
+RUN chmod +r
 CMD ["nginx","-g","daemon off;"]
