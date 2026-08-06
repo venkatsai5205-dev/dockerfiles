@@ -20,7 +20,7 @@ USER venkat
 ENV class="x" \
     student="venkat"
 
-ARG teacher:"SAI"
+ARG teacher:"VSAI"
 
 RUN echo "HI this class is: ${class},student is: ${student}, Class teacher name: ${teacher}"
 
