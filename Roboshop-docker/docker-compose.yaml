@@ -51,8 +51,8 @@ services:
     image: rabbitmq:3
     container_name: rabbitmq
     environment:
-     - RABBITMQ_DEFAULT_USER:venkat
-     - RABBITMQ_DEFAULT_PASS:Venkat@123
+     - RABBITMQ_DEFAULT_USER:roboshop
+     - RABBITMQ_DEFAULT_PASS:roboshop123
   payment:
     image: payment:v1
     container_name: payment
@@ -62,8 +62,8 @@ services:
      USER_HOST: user
      USER_PORT: 8080
      AMQP_HOST: rabbitmq
-     AMQP_USER: venkat
-     AQMP_PASS: Venkat@123
+     AMQP_USER: roboshop
+     AQMP_PASS: roboshop123
     depends_on:
      - cart
      - user
