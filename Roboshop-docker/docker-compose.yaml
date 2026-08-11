@@ -51,7 +51,7 @@ services:
     image: rabbitmq:3
     container_name: rabbitmq
     environment:
-     RABBITMQ_DEFAULT_USER:venkat
-     RABBITMQ_DEFAULT_PASS:Venkat@123
+     - RABBITMQ_DEFAULT_USER:venkat
+     - RABBITMQ_DEFAULT_PASS:Venkat@123
 
 
