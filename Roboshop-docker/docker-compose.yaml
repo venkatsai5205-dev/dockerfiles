@@ -16,7 +16,7 @@ services:
    image: mongodb:v1
    container_name: mongodb
    volumes:
-    - mongodb: /data/db
+    - mongodb:/data/db
 
 
   catalogue:
